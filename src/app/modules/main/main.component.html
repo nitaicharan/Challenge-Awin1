@@ -1,0 +1,33 @@
+<div class="login-page height-100">
+  <div id="container" class="container-fluid bg-white">
+    <section id="content">
+      <div class="row brand-color-primary">
+        <div class="col-sm-4 col-sm-offset-4 text-center logo-login">
+          <a href="/login?networkGroup=awin">
+            <img
+              alt="awin"
+              src="https://images.awin.com/awin-interface/logos/awin-login.svg"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="row row-login-form row-dark">
+        <div class="container container-hack">
+          <div
+            class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-12"
+          >
+            Progress:
+            <mat-progress-bar
+              mode="determinate"
+              [value]="status$ | async"
+            ></mat-progress-bar>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer-login text-center bg-white">
+      <img src="assets/cheetah-face.png" class="img-responsive" />
+    </div>
+  </div>
+</div>
